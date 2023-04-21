@@ -3,8 +3,8 @@ import { reactionAdded } from "./postsSlice";
 
 const reactionEmoji = {
   thumbsUp: "👍",
-  wow: "😲",
-  heart: "❤",
+  wow: "😮",
+  heart: "❤️",
   rocket: "🚀",
   coffee: "☕",
 };
@@ -12,22 +12,21 @@ const reactionEmoji = {
 const ReactionButtons = ({ post }) => {
   const dispatch = useDispatch();
 
-  const reactionButtons = Object.entries(reactionEmoji).map(([key, val]) => {
+  const reactionButtons = Object.entries(reactionEmoji).map(([name, emoji]) => {
     return (
       <button
-        key={key}
+        key={name}
         type="button"
         className="reactionButton"
         onClick={() =>
-          dispatch(reactionAdded({ postId: post.id, reaction: key }))
+          dispatch(reactionAdded({ postId: post.id, reaction: name }))
         }
       >
-        {val} {post.reactions[key]}
+        {emoji} {post.reactions[name]}
       </button>
     );
   });
 
   return <div>{reactionButtons}</div>;
 };
-
 export default ReactionButtons;
