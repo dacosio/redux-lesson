@@ -26,10 +26,11 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "import/no-unresolved": "off",
     "react/react-in-jsx-scope": "error",
-    "arrow-body-style": ["error", "always"],
+    "arrow-body-style": ["error", "as-needed"],
     "linebreak-style": ["error", "windows"],
     "semi": 0,
     "comma-dangle": 0,
+    "react/jsx-one-expression-per-line": [2, { "allow": "literal" }],
     "react/function-component-definition": [
       2,
       {
