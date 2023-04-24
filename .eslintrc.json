@@ -10,10 +10,31 @@
     "sourceType": "module"
   },
   "plugins": ["react", "prettier"],
+  // "rules": {
+  //   "semi": 0,
+  //   "comma-dangle": 0,
+  //   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+  //   "react/named-components": [2, { "namedComponents": "arrow-function" }],
+  //   "linebreak-style": ["error", "windows"],
+  //   "react/react-in-jsx-scope": "error",
+  //   "prettier/prettier": "error",
+  //   "arrow-body-style": ["error", "as-needed"]
+  // }
+
   "rules": {
-    "semi": 0,
-    "comma-dangle": 0,
     "prettier/prettier": "error",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/no-unresolved": "off",
+    "react/react-in-jsx-scope": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "linebreak-style": ["error", "windows"],
+    "semi": 0,
+    "comma-dangle": 0
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
   }
 }

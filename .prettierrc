@@ -8,5 +8,6 @@
   "bracketSpacing": true,
   "jsxSingleQuote": true,
   "jsxBracketSameLine": false,
-  "endOfLine": "auto"
+  "endOfLine": "crlf",
+  "plugins": ["prettier-plugin-import-sort"]
 }
