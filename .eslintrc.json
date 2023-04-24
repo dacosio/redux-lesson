@@ -30,7 +30,7 @@
     "linebreak-style": ["error", "windows"],
     "semi": 0,
     "comma-dangle": 0,
-    "react/jsx-one-expression-per-line": [2, { "allow": "literal" }],
+    // "react/jsx-one-expression-per-line": [2, { "allow": "literal" }],
     "react/function-component-definition": [
       2,
       {
