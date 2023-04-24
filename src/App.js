@@ -8,7 +8,7 @@ import EditPostForm from './features/posts/EditPostForm';
 import PostsList from './features/posts/PostsList';
 import SinglePostPage from './features/posts/SinglePostPage';
 
-function App() {
+const App = () => {
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
@@ -22,6 +22,6 @@ function App() {
       </Route>
     </Routes>
   );
-}
+};
 
 export default App;
